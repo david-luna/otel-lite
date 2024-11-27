@@ -1,0 +1,16 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "build",
+    "emitDeclarationOnly": true,
+    "allowJs": true,
+    "checkJs": true,
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ES2020"]
+  },
+  "exclude": ["node_modules"]
+}

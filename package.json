@@ -1,0 +1,25 @@
+{
+  "name": "otel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "opentelemetry",
+    "javascript",
+    "profiling",
+    "metrics",
+    "stats"
+  ],
+  "author": "David Luna",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.1"
+  }
+}
