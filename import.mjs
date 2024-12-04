@@ -14,24 +14,18 @@
  * limitations under the License.
  */
 
-import { trace } from '@opentelemetry/api';
-import { tracerProvider } from './traces/provider.js';
-import { loadInstrumentations } from './instrumentations/loader.js';
+// Register ESM hook and start
+// This is called for `--import otel`.
 
-// Set instrumentations
-await loadInstrumentations();
+import module from 'node:module';
+import {isMainThread} from 'node:worker_threads';
 
-// Set resource (detectors)
+if (isMainThread) {
+    if (
+        typeof module.register === 'function'
+    ) {
+        module.register('./hook.mjs', import.meta.url);
+    }
 
-// Set exporters
-// Set processors
-
-
-// Set providers
-// - tracer
-trace.setGlobalTracerProvider(tracerProvider);
-// - metrics
-// - logs
-
-// start ????
-// - make sure to flush the data when SIGKILL
+    await import('./lib/index.js');
+}

@@ -16,8 +16,15 @@
   ],
   "author": "David Luna",
   "license": "Apache-2.0",
+  "exports": {
+    ".": {
+      "import": "./import.mjs"
+    },
+    "./package.json": "./package.json"
+  },
   "dependencies": {
-    "@opentelemetry/api": "^1.9.0"
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/instrumentation": "^0.55.0"
   },
   "devDependencies": {
     "@types/node": "^22.9.1"
