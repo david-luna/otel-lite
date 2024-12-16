@@ -15,7 +15,7 @@
  */
 
 // Register ESM hook and start
-// This is called for `--import otel`.
+// This is called for `--import otel-light`.
 
 import module from 'node:module';
 import {isMainThread} from 'node:worker_threads';

@@ -1,8 +1,7 @@
 {
-  "name": "otel",
+  "name": "otel-ligth",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +15,14 @@
   ],
   "author": "David Luna",
   "license": "Apache-2.0",
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md",
+    "hook.mjs",
+    "import.mjs",
+    "package.json"
+  ],
   "exports": {
     ".": {
       "import": "./import.mjs"
@@ -24,9 +31,10 @@
   },
   "dependencies": {
     "@opentelemetry/api": "^1.9.0",
-    "@opentelemetry/instrumentation": "^0.55.0"
+    "@opentelemetry/instrumentation": "^0.56.0"
   },
   "devDependencies": {
+    "@opentelemetry/instrumentation-http": "^0.56.0",
     "@types/node": "^22.9.1"
   }
 }
