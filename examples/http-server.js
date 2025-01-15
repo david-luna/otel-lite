@@ -18,7 +18,7 @@
  */
 
 // Usage:
-//  node --import otel-light http-server.js
+//  OTEL_NODE_ENABLED_INSTRUMENTATIONS=http node --import otel-lite http-server.js
 //  curl -i http://127.0.0.1:3000/ping
 
 import http from 'http';
