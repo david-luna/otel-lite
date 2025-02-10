@@ -23,4 +23,4 @@ import {
   getFormat,
   getSource,
 } from 'import-in-the-middle/hook.mjs';
-export { load, resolve, getFormat, getSource };
+export {load, resolve, getFormat, getSource};

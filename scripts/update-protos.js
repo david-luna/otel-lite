@@ -4,7 +4,6 @@ import {mkdtempSync, cpSync, existsSync, rmSync} from 'node:fs';
 import {resolve, join, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-
 // SCRIPT PARAMS
 const REPO_NAME = 'opentelemetry-proto';
 const REPO_URL = `https://github.com/open-telemetry/${REPO_NAME}.git`;
@@ -14,8 +13,6 @@ const HASH_TAG = 'v1.4.0';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const TOP = resolve(__dirname, '..');
-
-
 
 // Clone the protos
 const tempPath = mkdtempSync(tmpdir());

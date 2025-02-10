@@ -21,11 +21,9 @@ import module from 'node:module';
 import {isMainThread} from 'node:worker_threads';
 
 if (isMainThread) {
-    if (
-        typeof module.register === 'function'
-    ) {
-        module.register('./hook.mjs', import.meta.url);
-    }
+  if (typeof module.register === 'function') {
+    module.register('./hook.mjs', import.meta.url);
+  }
 
-    await import('./lib/index.js');
+  await import('./lib/index.js');
 }
