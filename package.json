@@ -4,7 +4,9 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "prettier --check . && eslint lib/**/*.js scripts/**/*.js",
+    "lint:fix": "prettier --write . && eslint lib/**/*.js scripts/**/*.js --fix"
   },
   "keywords": [
     "opentelemetry",
