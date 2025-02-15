@@ -10,7 +10,7 @@ export default [
   eslintConfigPrettier,
   importPlugin.flatConfigs.recommended,
   {
-    files: ['**/*.js'],
+    files: ['**/*.{js,mjs}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
